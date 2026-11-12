@@ -1,0 +1,85 @@
+.best_selling {
+    display: block;width: 100%;
+    h2 {
+        font-family: Roboto Slab;
+        font-size: 6.4rem;
+        text-align: center;
+        color: var(--col-darkgreen);
+        margin: 50px 0;
+    }
+    p {
+        font-size: 2.2rem;
+        text-align: center;
+        color: var(--col-darkgreen);
+        margin: 50px 0;
+    }
+    .a_btn {
+        width: 180px;
+        margin: 0 auto;
+
+
+        border-radius: 3px;
+        border: 2px solid var(--col-darkgreen);
+        padding: 10px 40px;
+        font-size: 2.2rem;
+        background: none;
+        color: var(--col-darkgreen);
+        background: url('../../img/line.svg') no-repeat center right 20px;
+
+        &:hover {
+            text-decoration: none;
+            border: 2px solid var(--col-mediumgreen);
+            color: var(--col-mediumgreen);
+            background: url('../../img/line_hover.svg') no-repeat center right 20px;
+        }
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-bottom: 50px;
+
+        .card {
+            flex-basis: 30%;
+            
+
+
+            &:nth-child(3n-3) img {
+                background-color: var(--col-imgfon1);
+            }
+            &:nth-child(3n-2) img {
+                background-color: var(--col-imgfon2);
+            }
+            &:nth-child(3n-1) img {
+                background-color: var(--col-imgfon3);
+            }
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
+            .price_rating {
+                display: flex;
+                justify-content: center;
+                font-size: 2.2rem;
+                margin-top: 20px;
+            }
+            .price {
+                padding-right: 30px;
+            }
+            .rating {
+                padding: 0 30px;
+                border-left: 1px solid var(--col-darkgray2);
+                background: url('../../img/star.svg') no-repeat center right;
+            }
+
+        }
+    }
+}
